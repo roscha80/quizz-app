@@ -1,0 +1,13 @@
+.quiz-card__general {
+  display: grid;
+  grid-gap: 12px;
+  padding: 10px;
+  background: var(--background);
+  color: var(--color-white);
+}
+
+.quiz-card__heading {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
