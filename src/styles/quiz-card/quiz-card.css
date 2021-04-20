@@ -3,7 +3,7 @@
   grid-gap: 12px;
   padding: 10px;
   background: var(--background);
-  color: var(--color-white);
+  color: var(--color-blue);
 }
 
 .quiz-card__heading {
