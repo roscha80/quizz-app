@@ -2,6 +2,9 @@
   background: var(--color-primary);
   color: var(--color-white);
   padding: 12px;
+  position: fixed;
+  top: 0;
+  width: 600px;
 }
 
 .app-header__heading {
