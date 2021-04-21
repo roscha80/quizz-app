@@ -14,5 +14,5 @@
 
 .quiz-cart__button {
   color: var(--color-blue);
-  background: var(--background);
+  background: var(--color-primary);
 }
