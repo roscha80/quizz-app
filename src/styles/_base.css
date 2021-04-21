@@ -3,12 +3,11 @@
 }
 
 body {
-  background-color: var(--color-white);
+  background-color: var(--background);
   color: var(--color-black);
-  font-family: sans-serif;
+  display: grid;
+  font-family: 'DotGothic16', sans-serif;
   font-size: 112.5%;
-  line-height: 1.5;
-  margin: 0;
 }
 
 h1,
@@ -21,4 +20,13 @@ h3 {
 input,
 button {
   font-size: 1em;
+}
+
+.app-main {
+  grid-gap: 16px;
+  grid-template-rows: 48px auto 60px;
+  height: 100vh;
+  line-height: 1.5;
+  margin: 15px;
+  max-width: 600px;
 }
