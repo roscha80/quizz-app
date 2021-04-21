@@ -1,4 +1,4 @@
-.quiz__general {
+.quiz-card {
   background: var(--background);
   border-color: var(--color-white);
   color: var(--color-blue);
@@ -44,4 +44,5 @@
 
 .quiz-card__bookmark--added {
   border: 10px solid black;
+  border-bottom-color: transparent;
 }
