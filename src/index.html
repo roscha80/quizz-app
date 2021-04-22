@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <header class="app-header">
+      <h1 class="app-header__heading">Magic Quizard</h1>
+    </header>
     <main class="app-main">
-      <header class="app-header">
-        <h1 class="app-header__heading">Magic Quizard</h1>
-      </header>
       <section class="quiz-card">
         <h2 class="quiz-card__heading">There should be a Question</h2>
         <button class="quiz-cart__button">Show answer</button>
@@ -56,12 +56,20 @@
     </main>
     <footer class="navbar-main">
       <nav>
-        <button class="navbar__button" aria-label="home">Home</button>
-        <button class="navbar__button" aria-label="profile">Profile</button>
-        <button class="navbar__button" aria-label="bookmarked">
+        <a href="./index.html" class="navbar__button" aria-label="home">Home</a>
+        <a href="./profile.html" class="navbar__button" aria-label="profile"
+          >Profile</a
+        >
+        <a
+          href="./bookmarked.html"
+          class="navbar__button"
+          aria-label="bookmarked"
+        >
           Bookmarked
-        </button>
-        <button class="navbar__button" aria-label="create">Create</button>
+        </a>
+        <a href="./create.html" class="navbar__button" aria-label="create"
+          >Create</a
+        >
       </nav>
     </footer>
   </body>

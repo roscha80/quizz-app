@@ -2,9 +2,7 @@
   background: var(--color-primary);
   color: var(--color-white);
   padding: 12px;
-  position: fixed;
-  bottom: 0;
-  width: 600px;
+  width: 100%;
 }
 
 .navbar__button {
