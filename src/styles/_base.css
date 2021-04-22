@@ -6,6 +6,9 @@ body {
   background-color: var(--background);
   color: var(--color-black);
   display: grid;
+  grid-template-rows: 48px auto 60px;
+  max-width: 600px;
+  height: 100vh;
   font-family: 'DotGothic16', sans-serif;
   font-size: 112.5%;
 }
@@ -23,10 +26,7 @@ button {
 }
 
 .app-main {
-  grid-gap: 16px;
-  grid-template-rows: 48px auto 60px;
-  height: 100vh;
-  line-height: 1.5;
-  margin: 15px;
-  max-width: 600px;
+  place-items: center;
+  grid-gap: 26px;
+  overflow-y: scroll;
 }
