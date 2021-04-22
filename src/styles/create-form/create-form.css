@@ -2,9 +2,15 @@
   background: var(--quizcard);
   border-color: var(--color-white);
   color: var(--color-blue);
-  display: grid;
+  display: flexbox;
   grid-gap: 12px;
-  max-width: 600px;
+  max-width: 100%;
+  max-height: fit-content;
+  padding: 50px;
+}
+
+.flex-item {
+  justify-content: center;
 }
 
 .create-form__button {
