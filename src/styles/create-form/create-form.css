@@ -1,0 +1,14 @@
+.create-form {
+  background: var(--quizcard);
+  border-color: var(--color-white);
+  color: var(--color-blue);
+  display: grid;
+  grid-gap: 12px;
+  max-width: 600px;
+}
+
+.create-form__button {
+  background: var(--quizcard);
+  padding: 8px;
+  border-radius: 8px;
+}
