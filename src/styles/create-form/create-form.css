@@ -1,0 +1,20 @@
+.create-form {
+  background: var(--quizcard);
+  border-color: var(--color-white);
+  color: var(--color-blue);
+  display: flexbox;
+  grid-gap: 12px;
+  max-width: 100%;
+  max-height: fit-content;
+  padding: 50px;
+}
+
+.flex-item {
+  justify-content: center;
+}
+
+.create-form__button {
+  background: var(--quizcard);
+  padding: 8px;
+  border-radius: 8px;
+}
