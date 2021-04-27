@@ -14,7 +14,15 @@
 }
 
 .create-form__button {
-  background: var(--quizcard);
   padding: 8px;
   border-radius: 8px;
+  border: none;
+}
+
+.create-form__button:hover {
+  background-color: var(--button-hover);
+}
+
+.create-form__button::before {
+  background-color: var(--primary);
 }
