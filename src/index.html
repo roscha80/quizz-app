@@ -18,7 +18,7 @@
       <h1 class="app-header__heading">Magic Quizard</h1>
     </header>
     <main class="app-main">
-      <section class="quiz-card">
+      <section class="quiz-card js__home">
         <h2 class="quiz-card__heading">Question</h2>
         <p>The Question is what is the Question?</p>
         <button class="quiz-cart__button buttonShowAnswer">Show answer</button>
@@ -31,28 +31,54 @@
         </ul>
         <div
           role="button"
-          class="quiz-card__bookmark quiz-card__bookmark--added"
+          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added"
+          aria-label="Add bookmark"
+        ></div>
+      </section>
+      <form class="create-form hidden js__form">
+        <label for="question"> question: </label>
+        <textarea
+          name="question"
+          id="question"
+          cols="30"
+          rows="10"
+          placeholder="Please write your question in this textarea"
+        ></textarea>
+        <label for="answer"> answer </label>
+        <textarea
+          name="answer"
+          id="answer"
+          cols="30"
+          rows="10"
+          placeholder="Please write your answer in this textarea"
+        ></textarea>
+        <label for="tags">taglist</label>
+        <input id="tags" type="text" placeholder="Write down your tags" />
+        <button class="create-form__button">Submit</button>
+      </form>
+      <section class="quiz-card hidden js__bookmarked">
+        <h2 class="quiz-card__heading">Question</h2>
+        <p>The Question is what is the Question?</p>
+        <button class="quiz-cart__button buttonShowAnswer">Show answer</button>
+        <p class="answer hidden">This is the answer of the question above!</p>
+        <ul class="quiz-card__taglist">
+          <li>#tag 1</li>
+          <li>#tag 2</li>
+          <li>#tag 3</li>
+          <li>#tag 4</li>
+        </ul>
+        <div
+          role="button"
+          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added"
           aria-label="Add bookmark"
         ></div>
       </section>
     </main>
     <footer class="navbar-main">
-      <nav>
-        <a href="./index.html" class="navbar__button" aria-label="home">Home</a>
-        <a href="./profile.html" class="navbar__button" aria-label="profile"
-          >Profile</a
-        >
-        <a
-          href="./bookmarked.html"
-          class="navbar__button"
-          aria-label="bookmarked"
-        >
-          Bookmarked
-        </a>
-        <a href="./create.html" class="navbar__button" aria-label="create"
-          >Create</a
-        >
-      </nav>
+      <button class="navbar__button js__button-home">Show</button>
+      <button class="navbar__button js__button-create">Create</button>
+      <button class="navbar__button js__button-bookmarked">Bookmarked</button>
+      <button class="navbar__button js__button-home-show">Profile</button>
     </footer>
   </body>
 </html>
