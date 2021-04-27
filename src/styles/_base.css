@@ -30,3 +30,7 @@ button {
   grid-gap: 26px;
   overflow-y: scroll;
 }
+
+p {
+  text-align: center;
+}
