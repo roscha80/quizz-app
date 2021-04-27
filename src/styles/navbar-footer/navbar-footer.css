@@ -9,4 +9,10 @@
   background: var(--quizcard);
   padding: 8px;
   border-radius: 8px;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.navbar__button:hover {
+  background-color: var(--button-hover);
 }

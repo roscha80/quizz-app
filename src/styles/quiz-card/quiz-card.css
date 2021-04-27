@@ -7,10 +7,11 @@
   max-width: 600px;
   padding: 10px;
   position: relative;
+  margin: 20px;
 }
 
-.quiz-card:first-child {
-  margin-top: 40px;
+.quiz-card:nth-child {
+  margin: 40px 0;
 }
 
 .quiz-card__heading {
@@ -22,6 +23,11 @@
 .quiz-cart__button {
   background: var(--color-primary);
   color: var(--color-white);
+  text-decoration: none;
+}
+
+.quiz-cart__button:hover {
+  background-color: var(--button-hover);
 }
 
 .quiz-card__taglist {
@@ -31,6 +37,7 @@
   flex-direction: row;
   list-style: none;
   justify-content: space-evenly;
+  margin: 5px 0;
 }
 
 .quiz-card__taglist li {
