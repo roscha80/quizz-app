@@ -36,16 +36,11 @@ homeButtonShow.addEventListener('click', () => {
   createScreen.classList.add('hidden')
   bookmarkedScreen.classList.add('hidden')
   profileScreen.classList.add('hidden')
-  headerHome.classList.remove('hidden')
 
   homeButtonShow.classList.add('navbar__button-active')
   createButtonShow.classList.remove('navbar__button-active')
   bookmarkedButtonShow.classList.remove('navbar__button-active')
   profileButtonShow.classList.remove('navbar__button-active')
-
-  headerCreate.classList.add('hidden')
-  headerBookmarks.classList.add('hidden')
-  headerProfile.classList.add('hidden')
 })
 
 createButtonShow.addEventListener('click', () => {
