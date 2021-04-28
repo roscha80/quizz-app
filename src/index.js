@@ -4,15 +4,23 @@ const buttonShow = document.querySelector('.buttonShowAnswer')
 const bookmark = document.querySelector('.js__bookmark')
 const bookmarkAdded = document.querySelector('.js__bookmark--added')
 
-const homeScreen = document.querySelector('.js__home')
-const createScreen = document.querySelector('.js__form')
-const bookmarkedScreen = document.querySelector('.js__bookmarked')
-const profileScreen = document.querySelector('.js__profile')
+const homeScreen = document.querySelector('[data-page="js__home"]')
+const createScreen = document.querySelector('[data-page="js__form"]')
+const bookmarkedScreen = document.querySelector('[data-page="js__bookmarked"]')
+const profileScreen = document.querySelector('[data-page="js__profile"]')
 
-const homeButtonShow = document.querySelector('.js__button-home')
-const createButtonShow = document.querySelector('.js__button-create')
-const bookmarkedButtonShow = document.querySelector('.js__button-bookmarked')
-const profileButtonShow = document.querySelector('.js__button-profile')
+const homeButtonShow = document.querySelector('[data-button="js__button-home"]')
+const createButtonShow = document.querySelector(
+  '[data-button="js__button-create"]'
+)
+const bookmarkedButtonShow = document.querySelector(
+  '[data-button="js__button-bookmarked"]'
+)
+const profileButtonShow = document.querySelector(
+  '[data-button="js__button-profile"]'
+)
+
+const header = document.querySelector('[data-header="home"]')
 
 buttonShow.addEventListener('click', () => {
   answer.classList.toggle('hidden')
@@ -23,18 +31,25 @@ bookmark.addEventListener('click', () => {
 })
 
 homeButtonShow.addEventListener('click', () => {
+  header.innerText = 'Magic Quizard'
   homeScreen.classList.remove('hidden')
   createScreen.classList.add('hidden')
   bookmarkedScreen.classList.add('hidden')
   profileScreen.classList.add('hidden')
+  headerHome.classList.remove('hidden')
 
   homeButtonShow.classList.add('navbar__button-active')
   createButtonShow.classList.remove('navbar__button-active')
   bookmarkedButtonShow.classList.remove('navbar__button-active')
   profileButtonShow.classList.remove('navbar__button-active')
+
+  headerCreate.classList.add('hidden')
+  headerBookmarks.classList.add('hidden')
+  headerProfile.classList.add('hidden')
 })
 
 createButtonShow.addEventListener('click', () => {
+  header.innerText = 'Create'
   homeScreen.classList.add('hidden')
   createScreen.classList.remove('hidden')
   bookmarkedScreen.classList.add('hidden')
@@ -47,6 +62,7 @@ createButtonShow.addEventListener('click', () => {
 })
 
 bookmarkedButtonShow.addEventListener('click', () => {
+  header.innerText = 'Bookmarked'
   homeScreen.classList.add('hidden')
   createScreen.classList.add('hidden')
   bookmarkedScreen.classList.remove('hidden')
@@ -59,6 +75,7 @@ bookmarkedButtonShow.addEventListener('click', () => {
 })
 
 profileButtonShow.addEventListener('click', () => {
+  header.innerText = 'Profile'
   homeScreen.classList.add('hidden')
   createScreen.classList.add('hidden')
   bookmarkedScreen.classList.add('hidden')

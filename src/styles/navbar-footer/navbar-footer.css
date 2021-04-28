@@ -2,7 +2,14 @@
   background: var(--color-primary);
   color: var(--color-white);
   padding: 12px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 699px) {
+  .navbar__button {
+    scale: 80%;
+  }
 }
 
 .navbar__button {
