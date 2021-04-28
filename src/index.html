@@ -18,7 +18,7 @@
       <h1 class="app-header__heading">Magic Quizard</h1>
     </header>
     <main class="app-main">
-      <section class="quiz-card js__home">
+      <section class="quiz-card js__home hidden">
         <h2 class="quiz-card__heading">Question</h2>
         <p>The Question is what is the Question?</p>
         <button class="quiz-cart__button buttonShowAnswer">Show answer</button>
@@ -73,12 +73,32 @@
           aria-label="Add bookmark"
         ></div>
       </section>
+      <section class="profile__main hidden js__profile">
+        <img
+          class="img"
+          src="https://source.unsplash.com/random/200x200"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          natus odit assumenda doloremque, tempora magnam quasi dolor
+          perferendis et eligendi unde dolorum autem aliquam nisi rerum quis
+          debitis. Beatae, qui?
+        </p>
+        <ul class="profile__taglist">
+          <li>#tag 1</li>
+          <li>#tag 2</li>
+          <li>#tag 3</li>
+          <li>#tag 4</li>
+        </ul>
+        <button class="profile__button js__button-logout">Logout</button>
+      </section>
     </main>
     <footer class="navbar-main">
-      <button class="navbar__button js__button-home">Show</button>
+      <button class="navbar__button js__button-home">Home</button>
       <button class="navbar__button js__button-create">Create</button>
       <button class="navbar__button js__button-bookmarked">Bookmarked</button>
-      <button class="navbar__button js__button-home-show">Profile</button>
+      <button class="navbar__button js__button-profile">Profile</button>
     </footer>
   </body>
 </html>

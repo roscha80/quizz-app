@@ -1,0 +1,50 @@
+.profile__main {
+  background: var(--quizcard);
+  color: var(--color-blue);
+  display: grid;
+  grid-gap: 12px;
+  max-width: 100%;
+  max-height: fit-content;
+  padding: 50px;
+}
+
+.flex-item {
+  justify-content: center;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.profile__taglist {
+  padding: 0;
+  column-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  margin: 5px 0;
+}
+
+.profile__taglist li {
+  background: var(--color-primary);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.profile__button {
+  background: var(--quizcard);
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.profile__button:hover {
+  background-color: var(--button-hover);
+}
+.profile__button-active {
+  background-color: var(--button-hover) !important;
+}
