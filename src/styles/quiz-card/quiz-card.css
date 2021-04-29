@@ -46,10 +46,6 @@
   border-radius: 8px;
 }
 
-.quiz-card__answer {
-  visibility: hidden;
-}
-
 .quiz-card__bookmark {
   border: 10px solid white;
   border-bottom-color: transparent;
