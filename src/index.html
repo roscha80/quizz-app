@@ -14,7 +14,7 @@
     <script defer type="module" src="./index.js"></script>
   </head>
   <body>
-    <header class="app-header">
+    <header class="app-header" data-header>
       <h1 data-header class="app-header__heading">Magic Quizard</h1>
     </header>
     <main class="app-main" data-page="js__home">
@@ -101,7 +101,9 @@
       </section>
     </main>
     <footer class="navbar-main">
-      <button data-button="js__button-home" class="navbar__button">Home</button>
+      <button data-button="js__button-home" class="navbar__button-active">
+        Home
+      </button>
       <button data-button="js__button-create" class="navbar__button">
         Create
       </button>

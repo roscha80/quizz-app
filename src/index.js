@@ -20,7 +20,7 @@ const profileButtonShow = document.querySelector(
   '[data-button="js__button-profile"]'
 )
 
-const header = document.querySelector('[data-header="home"]')
+const header = document.querySelector('[data-header]')
 
 buttonShow.addEventListener('click', () => {
   answer.classList.toggle('hidden')
@@ -30,54 +30,52 @@ bookmark.addEventListener('click', () => {
   bookmarkAdded.classList.toggle('quiz-card__bookmark--added')
 })
 
-homeButtonShow.addEventListener('click', () => {
-  header.innerText = 'Magic Quizard'
-  homeScreen.classList.remove('hidden')
+const hideAllPages = () => {
+  homeScreen.classList.add('hidden')
   createScreen.classList.add('hidden')
   bookmarkedScreen.classList.add('hidden')
   profileScreen.classList.add('hidden')
+}
 
-  homeButtonShow.classList.add('navbar__button-active')
+const unactiveAllButtons = () => {
+  homeButtonShow.classList.remove('navbar__button-active')
   createButtonShow.classList.remove('navbar__button-active')
   bookmarkedButtonShow.classList.remove('navbar__button-active')
   profileButtonShow.classList.remove('navbar__button-active')
+}
+
+homeButtonShow.addEventListener('click', () => {
+  header.innerText = 'Magic Quizard'
+  hideAllPages()
+  homeScreen.classList.remove('hidden')
+
+  unactiveAllButtons()
+  homeButtonShow.classList.add('navbar__button-active')
 })
 
 createButtonShow.addEventListener('click', () => {
   header.innerText = 'Create'
-  homeScreen.classList.add('hidden')
+  hideAllPages()
   createScreen.classList.remove('hidden')
-  bookmarkedScreen.classList.add('hidden')
-  profileScreen.classList.add('hidden')
 
-  homeButtonShow.classList.remove('navbar__button-active')
+  unactiveAllButtons()
   createButtonShow.classList.add('navbar__button-active')
-  bookmarkedButtonShow.classList.remove('navbar__button-active')
-  profileButtonShow.classList.remove('navbar__button-active')
 })
 
 bookmarkedButtonShow.addEventListener('click', () => {
   header.innerText = 'Bookmarked'
-  homeScreen.classList.add('hidden')
-  createScreen.classList.add('hidden')
+  hideAllPages()
   bookmarkedScreen.classList.remove('hidden')
-  profileScreen.classList.add('hidden')
 
-  homeButtonShow.classList.remove('nnavbar__button-active')
-  createButtonShow.classList.remove('navbar__button-active')
+  unactiveAllButtons()
   bookmarkedButtonShow.classList.add('navbar__button-active')
-  profileButtonShow.classList.remove('navbar__button-active')
 })
 
 profileButtonShow.addEventListener('click', () => {
   header.innerText = 'Profile'
-  homeScreen.classList.add('hidden')
-  createScreen.classList.add('hidden')
-  bookmarkedScreen.classList.add('hidden')
+  hideAllPages()
   profileScreen.classList.remove('hidden')
 
-  homeButtonShow.classList.remove('nnavbar__button-active')
-  createButtonShow.classList.remove('navbar__button-active')
-  bookmarkedButtonShow.classList.remove('navbar__button-active')
+  unactiveAllButtons()
   profileButtonShow.classList.add('navbar__button-active')
 })
