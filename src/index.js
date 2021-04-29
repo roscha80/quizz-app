@@ -1,8 +1,6 @@
-const answer = getElement('.answer')
 const buttonShow = getElement('.buttonShowAnswer')
 
 const bookmark = getElement('.js__bookmark')
-const bookmarkAdded = getElement('.js__bookmark--added')
 
 const homeScreen = getElement('[data-page="js__home"]')
 const createScreen = getElement('[data-page="js__form"]')
@@ -96,9 +94,11 @@ function activateButton(button) {
 }
 
 function hideAnswer() {
+  const answer = getElement('.answer')
   answer.classList.toggle('hidden')
 }
 
 function changeBookmark() {
+  const bookmarkAdded = getElement('.js__bookmark--added')
   bookmarkAdded.classList.toggle('quiz-card__bookmark--added')
 }
