@@ -7,10 +7,11 @@ body {
   color: var(--color-black);
   display: grid;
   grid-template-rows: 48px auto 60px;
-  max-width: 600px;
+  max-width: 80%;
   height: 100vh;
   font-family: 'DotGothic16', sans-serif;
   font-size: 112.5%;
+  transition: all 0.4s ease-in-out;
 }
 
 h1,
@@ -23,12 +24,6 @@ h3 {
 input,
 button {
   font-size: 1em;
-}
-
-.app-main {
-  place-items: center;
-  grid-gap: 26px;
-  overflow-y: scroll;
 }
 
 p {

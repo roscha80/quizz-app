@@ -14,11 +14,11 @@
     <script defer type="module" src="./index.js"></script>
   </head>
   <body>
-    <header class="app-header">
-      <h1 class="app-header__heading">Magic Quizard</h1>
+    <header class="app-header" data-header>
+      <h1 data-header class="app-header__heading">Magic Quizard</h1>
     </header>
-    <main class="app-main">
-      <section class="quiz-card js__home">
+    <main data-page="js__home">
+      <section class="quiz-card">
         <h2 class="quiz-card__heading">Question</h2>
         <p>The Question is what is the Question?</p>
         <button class="quiz-cart__button buttonShowAnswer">Show answer</button>
@@ -35,7 +35,9 @@
           aria-label="Add bookmark"
         ></div>
       </section>
-      <form class="create-form hidden js__form">
+    </main>
+    <main class="hidden" data-page="js__form">
+      <form class="create-form">
         <label for="question"> question: </label>
         <textarea
           name="question"
@@ -56,7 +58,9 @@
         <input id="tags" type="text" placeholder="Write down your tags" />
         <button class="create-form__button">Submit</button>
       </form>
-      <section class="quiz-card hidden js__bookmarked">
+    </main>
+    <main class="hidden" data-page="js__bookmarked">
+      <section class="quiz-card">
         <h2 class="quiz-card__heading">Question</h2>
         <p>The Question is what is the Question?</p>
         <button class="quiz-cart__button buttonShowAnswer">Show answer</button>
@@ -74,11 +78,41 @@
         ></div>
       </section>
     </main>
+    <main class="profile__main hidden" data-page="js__profile">
+      <section>
+        <img
+          class="img"
+          src="https://source.unsplash.com/random/200x200"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          natus odit assumenda doloremque, tempora magnam quasi dolor
+          perferendis et eligendi unde dolorum autem aliquam nisi rerum quis
+          debitis. Beatae, qui?
+        </p>
+        <ul class="profile__taglist">
+          <li>#tag 1</li>
+          <li>#tag 2</li>
+          <li>#tag 3</li>
+          <li>#tag 4</li>
+        </ul>
+        <button class="profile__button js__button-logout">Logout</button>
+      </section>
+    </main>
     <footer class="navbar-main">
-      <button class="navbar__button js__button-home">Show</button>
-      <button class="navbar__button js__button-create">Create</button>
-      <button class="navbar__button js__button-bookmarked">Bookmarked</button>
-      <button class="navbar__button js__button-home-show">Profile</button>
+      <button data-button="js__button-home" class="navbar__button-active">
+        Home
+      </button>
+      <button data-button="js__button-create" class="navbar__button">
+        Create
+      </button>
+      <button data-button="js__button-bookmarked" class="navbar__button">
+        Bookmarked
+      </button>
+      <button data-button="js__button-profile" class="navbar__button">
+        Profile
+      </button>
     </footer>
   </body>
 </html>

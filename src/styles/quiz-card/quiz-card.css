@@ -59,3 +59,15 @@
   border: 10px solid black;
   border-bottom-color: transparent;
 }
+
+@media (max-width: 699px) {
+  .quiz-card {
+    scale: 80%;
+  }
+}
+
+@media (min-width: 700px) {
+  .quiz-card {
+    scale: 100%;
+  }
+}
