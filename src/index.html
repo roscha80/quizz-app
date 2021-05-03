@@ -14,8 +14,8 @@
     <script defer type="module" src="./index.js"></script>
   </head>
   <body>
-    <header class="app-header" data-header>
-      <h1 data-header="home" class="app-header__heading">Magic Quizard</h1>
+    <header class="app-header">
+      <h1 data-header class="app-header__heading">Magic Quizard</h1>
     </header>
     <main data-page="home">
       <section class="quiz-card" data-quizcard>
@@ -38,7 +38,8 @@
         </ul>
         <div
           role="button"
-          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added data-bookmark"
+          datdata-bookmark
+          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added"
           aria-label="Add bookmark"
         ></div>
       </section>
@@ -67,7 +68,7 @@
       </form>
     </main>
     <main class="hidden" data-page="bookmarked">
-      <section class="quiz-card" data-quizcard="">
+      <section class="quiz-card" data-quizcard>
         <h2 data-header="create" class="quiz-card__heading">Question</h2>
         <p>The Question is what is the Question?</p>
         <button data-button class="quiz-cart__button buttonShowAnswer">
@@ -84,7 +85,7 @@
         </ul>
         <div
           role="button"
-          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added"
+          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added data-bookmark"
           aria-label="Add bookmark"
         ></div>
       </section>
@@ -112,10 +113,34 @@
       </section>
     </main>
     <footer class="navbar-main">
-      <button data-nav="home" class="navbar__button-active">Home</button>
-      <button data-nav="form" class="navbar__button">Create</button>
-      <button data-nav="bookmarked" class="navbar__button">Bookmarked</button>
-      <button data-nav="profile" class="navbar__button">Profile</button>
+      <button
+        data-header-text="Magic Quizard"
+        data-nav="home"
+        class="navbar__button-active"
+      >
+        Home
+      </button>
+      <button
+        data-header-text="Create new Questions"
+        data-nav="form"
+        class="navbar__button"
+      >
+        Create
+      </button>
+      <button
+        data-header-text="Bookmarked Questions"
+        data-nav="bookmarked"
+        class="navbar__button"
+      >
+        Bookmarked
+      </button>
+      <button
+        data-header-text="Your Profile"
+        data-nav="profile"
+        class="navbar__button"
+      >
+        Profile
+      </button>
     </footer>
   </body>
 </html>
