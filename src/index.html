@@ -15,14 +15,21 @@
   </head>
   <body>
     <header class="app-header" data-header>
-      <h1 data-header class="app-header__heading">Magic Quizard</h1>
+      <h1 data-header="home" class="app-header__heading">Magic Quizard</h1>
     </header>
-    <main data-page="js__home">
-      <section class="quiz-card">
+    <main data-page="home">
+      <section class="quiz-card" data-quizcard>
         <h2 class="quiz-card__heading">Question</h2>
         <p>The Question is what is the Question?</p>
-        <button class="quiz-cart__button buttonShowAnswer">Show answer</button>
-        <p class="answer hidden">This is the answer of the question above!</p>
+        <button
+          data-button
+          class="quiz-cart__button buttonShowAnswer data-button"
+        >
+          Show answer
+        </button>
+        <p data-answer class="answer hidden">
+          This is the answer of the question above!
+        </p>
         <ul class="quiz-card__taglist">
           <li>#tag 1</li>
           <li>#tag 2</li>
@@ -31,12 +38,12 @@
         </ul>
         <div
           role="button"
-          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added"
+          class="quiz-card__bookmark quiz-card__bookmark--added js__bookmark js__bookmark--added data-bookmark"
           aria-label="Add bookmark"
         ></div>
       </section>
     </main>
-    <main class="hidden" data-page="js__form">
+    <main class="hidden" data-page="form">
       <form class="create-form">
         <label for="question"> question: </label>
         <textarea
@@ -59,12 +66,16 @@
         <button class="create-form__button">Submit</button>
       </form>
     </main>
-    <main class="hidden" data-page="js__bookmarked">
-      <section class="quiz-card">
-        <h2 class="quiz-card__heading">Question</h2>
+    <main class="hidden" data-page="bookmarked">
+      <section class="quiz-card" data-quizcard="">
+        <h2 data-header="create" class="quiz-card__heading">Question</h2>
         <p>The Question is what is the Question?</p>
-        <button class="quiz-cart__button buttonShowAnswer">Show answer</button>
-        <p class="answer hidden">This is the answer of the question above!</p>
+        <button data-button class="quiz-cart__button buttonShowAnswer">
+          Show answer
+        </button>
+        <p data-answer class="answer hidden">
+          This is the answer of the question above!
+        </p>
         <ul class="quiz-card__taglist">
           <li>#tag 1</li>
           <li>#tag 2</li>
@@ -78,7 +89,7 @@
         ></div>
       </section>
     </main>
-    <main class="profile__main hidden" data-page="js__profile">
+    <main class="profile__main hidden" data-page="profile">
       <section>
         <img
           class="img"
@@ -101,18 +112,10 @@
       </section>
     </main>
     <footer class="navbar-main">
-      <button data-button="js__button-home" class="navbar__button-active">
-        Home
-      </button>
-      <button data-button="js__button-create" class="navbar__button">
-        Create
-      </button>
-      <button data-button="js__button-bookmarked" class="navbar__button">
-        Bookmarked
-      </button>
-      <button data-button="js__button-profile" class="navbar__button">
-        Profile
-      </button>
+      <button data-nav="home" class="navbar__button-active">Home</button>
+      <button data-nav="form" class="navbar__button">Create</button>
+      <button data-nav="bookmarked" class="navbar__button">Bookmarked</button>
+      <button data-nav="profile" class="navbar__button">Profile</button>
     </footer>
   </body>
 </html>

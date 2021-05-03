@@ -1,7 +1,7 @@
 import setupBookmark from './setupBookmark'
 import setupNavigation from './setupNavigation'
-import setupQuizcard from './setupQuizcard'
+import setupQuizcards from './setupQuizcard'
 
 setupNavigation()
 setupBookmark()
-setupQuizcard()
+setupQuizcards()
